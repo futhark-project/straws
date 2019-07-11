@@ -1,0 +1,52 @@
+{
+  "name": "straws",
+  "version": "0.0.1",
+  "description": "gulp tasks",
+  "author": "iStuffs: Samuel DIDIER-LAURENT <istuffs@gmail.com> (https://istuffs.be)",
+  "license": "CC-BY-NC-SA-4.0",
+  "main": "tasks/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/futhark-project/straws.git"
+  },
+  "keywords": [
+    "gulp",
+    "task",
+    "futhark"
+  ],
+  "bugs": {
+    "url": "https://github.com/futhark-project/straws/issues"
+  },
+  "homepage": "https://github.com/futhark-project/straws#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "css-loader": "^3.0.0",
+    "eyeglass": "^2.4.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.0.0",
+    "panini": "^1.6.3",
+    "rimraf": "^2.6.3",
+    "sass-loader": "^7.1.0",
+    "sassdoc": "^2.7.0",
+    "vinyl-named": "^1.1.0",
+    "vue-loader": "^15.7.0",
+    "vue-style-loader": "^4.1.2",
+    "webpack": "^4.35.3",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^13.2.4"
+  }
+}
