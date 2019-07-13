@@ -3,7 +3,7 @@ const named = require('vinyl-named');
 const plugins = require('gulp-load-plugins');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
-const production = require('./helper/mode-arg');
+const production = require('./helpers/mode-arg');
 
 const webpackConfig = require('./webpack.vue.config');
 

@@ -10,7 +10,7 @@ const {
   JS,
   PATH,
 } = require('./straws.config.json');
-const production = require('./tasks/helper/mode-arg');
+const production = require('./tasks/helpers/mode-arg');
 
 /* Tasks */
 const {
