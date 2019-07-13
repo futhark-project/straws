@@ -5,10 +5,10 @@ const clean = require('./clean');
 const css = require('./css');
 const doc = require('./doc');
 const html = require('./html');
-const html = require('./html-panini');
+const htmlPanini = require('./html-panini');
 const images = require('./images');
 const js = require('./js');
-const js = require('./js-vue');
+const jsVue = require('./js-vue');
 const paniniRefresh = require('./paniniRefresh');
 const serve = require('./serve');
 
