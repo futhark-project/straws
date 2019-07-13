@@ -1,5 +1,5 @@
 const { VueLoaderPlugin } = require('vue-loader');
-const production = require('./s/mode-arg');
+const production = require('./helpers/mode-arg');
 
 
 /* JS */
