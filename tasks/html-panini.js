@@ -2,6 +2,7 @@ const { src, dest } = require('gulp');
 const panini = require('panini');
 const plugins = require('gulp-load-plugins');
 
+const config = require('./helpers/config');
 const production = require('./helpers/mode-arg');
 
 /* Plugins */
@@ -13,7 +14,7 @@ const {
     ERROR,
     HTML,
     PATH,
-} = require('../straws.config.json');
+} = config;
 
 
 /* HTML */

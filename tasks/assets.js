@@ -1,10 +1,11 @@
 const { src, dest } = require('gulp');
+const config = require('./helpers/config');
 
 /* Configuration */
 const {
     ASSETS,
     PATH,
-} = require('../straws.config.json');
+} = config;
 
 /* ASSETS - json and fonts */
 function assets() {

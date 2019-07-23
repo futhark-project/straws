@@ -3,6 +3,7 @@ const eyeglass = require('eyeglass');
 const plugins = require('gulp-load-plugins');
 
 const production = require('./helpers/mode-arg');
+const config = require('./helpers/config');
 
 /* Configuration */
 const {
@@ -10,7 +11,7 @@ const {
     CSS,
     ERROR,
     PATH,
-} = require('../straws.config.json');
+} = config;
 
 /* Plugins */
 // { autoprefixer, cleanCss, htmlmin, if, imagemin, notify, plumber, sass, sassGlob, uglify, zip }

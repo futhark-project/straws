@@ -1,12 +1,13 @@
 const { src } = require('gulp');
 const sassdoc = require('sassdoc');
+const config = require('./helpers/config');
 
 /* Configuration */
 const {
     CSS,
     DOC,
     PATH,
-} = require('../straws.config.json');
+} = config;
 
 // Doc - Sass Documentation
 function doc() {

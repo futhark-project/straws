@@ -1,11 +1,13 @@
 const { src, dest, lastRun } = require('gulp');
 const imagemin = require('gulp-imagemin');
 
+const config = require('./helpers/config');
+
 /* Configuration */
 const {
     IMAGES,
     PATH,
-} = require('../straws.config.json');
+} = config;
 
 /* IMAGES */
 function images() {

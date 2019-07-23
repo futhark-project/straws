@@ -1,10 +1,11 @@
 const browserSync = require('browser-sync');
+const config = require('./helpers/config');
 
 /* Configuration */
 const {
     PATH,
     SERVER,
-} = require('../straws.config.json');
+} = config;
 
 /* Serve */
 const serve = (done) => {

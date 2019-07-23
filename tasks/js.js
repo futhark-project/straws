@@ -4,7 +4,7 @@ const plugins = require('gulp-load-plugins');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const production = require('./helpers/mode-arg');
-
+const config = require('./helpers/config');
 const webpackConfig = require('./webpack.config');
 
 /* Plugins */
@@ -16,7 +16,7 @@ const {
     ERROR,
     JS,
     PATH,
-} = require('../straws.config.json');
+} = config;
 
 function js() {
     return src(PATH.src + JS.entries, { sourcemaps: !production })

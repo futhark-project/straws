@@ -1,9 +1,10 @@
 const rm = require('rimraf');
+const config = require('./helpers/config');
 
 /* Configuration */
 const {
     PATH,
-} = require('../straws.config.json');
+} = config;
 
 // Clean - Clean destination directory
 function clean(done) {
