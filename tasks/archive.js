@@ -1,20 +1,16 @@
 const { src, dest } = require('gulp');
-const { merge } = require('lodash');
 const zip = require('gulp-zip');
+const config = require('./helpers/config');
 
 const {
   ARCHIVE,
-} = require('../straws.config.json');
+} = config;
 
 // Archive
-function archive(
-  userConfig,
-  fileName = `${process.env.npm_package_name}.zip`
-) {
-  const config = merge({}, ARCHIVE, userConfig)
-    return src(config.src)
-      .pipe(zip(fileName))
-      .pipe(dest(config.dest));
+function archive() {
+  return src(ARCHIVE.src)
+    .pipe(zip(`${process.env.npm_package_name}.zip`))
+    .pipe(dest(ARCHIVE.dest));
 }
 
 module.exports = archive;
