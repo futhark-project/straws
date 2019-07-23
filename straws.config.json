@@ -1,13 +1,12 @@
 {
+  "ARCHIVE": {
+    "src": "dist/**/*",
+    "dest": "./"
+  },
   "ASSETS": {
     "src": "assets/**/*.{json,eot,otf,svg,ttf,woff,woff2}",
     "dest": "assets/"
   },
-  "COMPATIBILITY": [
-    "last 3 versions",
-    "ie >= 11",
-    "ios >= 10"
-  ],
   "CSS": {
     "src": "assets/sass/**/*.{sass,scss}",
     "dest": "assets/css"
