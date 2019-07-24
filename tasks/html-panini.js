@@ -12,18 +12,18 @@ const $ = plugins();
 /* Configuration */
 const {
     ERROR,
-    HTML,
+    HTMLPANINI,
     PATH,
 } = config;
 
 
 /* HTML */
 function html() {
-    return src(PATH.src + HTML.entries)
+  return src(PATH.src + HTMLPANINI.entries)
         .pipe($.plumber({ errorHandler: $.notify.onError(ERROR) }))
-        .pipe(panini(HTML.paniniOptions))
+    .pipe(panini(HTMLPANINI.paniniOptions))
         .pipe($.if(production, $.htmlmin({ collapseWhitespace: true })))
-        .pipe(dest(PATH.dest + HTML.dest));
+    .pipe(dest(PATH.dest + HTMLPANINI.dest));
 }
 
 module.exports = html;
