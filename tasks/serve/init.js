@@ -1,5 +1,5 @@
 const browserSync = require('browser-sync');
-const config = require('./helpers/config');
+const config = require('../helpers/config');
 
 /* Configuration */
 const {

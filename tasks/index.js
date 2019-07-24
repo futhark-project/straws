@@ -1,6 +1,5 @@
 const archive = require('./archive');
 const assets = require('./assets');
-const browserReload = require('./browserReload');
 const clean = require('./clean');
 const css = require('./css');
 const doc = require('./doc');
