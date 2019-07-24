@@ -1,7 +1,7 @@
 {
-  "name": "straws",
+  "name": "@futhark/straws",
   "version": "0.0.1",
-  "description": "gulp tasks",
+  "description": "versatyl gulp tasks library",
   "author": "iStuffs: Samuel DIDIER-LAURENT <istuffs@gmail.com> (https://istuffs.be)",
   "license": "CC-BY-NC-SA-4.0",
   "main": "tasks/index.js",
@@ -49,5 +49,6 @@
     "webpack": "^4.35.3",
     "webpack-stream": "^5.2.1",
     "yargs": "^13.2.4"
-  }
+  },
+  "devDependencies": {}
 }
