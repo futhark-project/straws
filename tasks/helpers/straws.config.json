@@ -22,7 +22,16 @@
     "src": "**/*.html",
     "dest": ""
   },
-  "HTMLPANINI": {
+  "IMAGES": {
+    "src": "assets/images/**/*.{gif,jpg,jpeg,png,svg}",
+    "dest": "assets/images"
+  },
+  "JS": {
+    "entries": "assets/scripts/main.js",
+    "src": "assets/scripts/**/*.js",
+    "dest": "assets/scripts"
+  },
+  "PANINI": {
     "entries": "pages/**/*.{html,hbs,handlebars}",
     "src": "**/*.{html,hbs,handlebars}",
     "dest": "",
@@ -33,15 +42,6 @@
       "helpers": "/src/helpers/",
       "data": "/src/data/"
     }
-  },
-  "IMAGES": {
-    "src": "assets/images/**/*.{gif,jpg,jpeg,png,svg}",
-    "dest": "assets/images"
-  },
-  "JS": {
-    "entries": "assets/scripts/main.js",
-    "src": "assets/scripts/**/*.js",
-    "dest": "assets/scripts"
   },
   "PATH": {
     "src": "src/",

@@ -4,11 +4,10 @@ const clean = require('./clean');
 const css = require('./css');
 const doc = require('./doc');
 const html = require('./html');
-const htmlPanini = require('./html-panini');
+const panini = require('./panini');
 const images = require('./images');
 const js = require('./js');
 const jsVue = require('./js-vue');
-const paniniRefresh = require('./paniniRefresh');
 const serve = require('./serve');
 const config = require('./helpers/config');
 const modeArg = require('./helpers/mode-arg');
@@ -22,12 +21,11 @@ module.exports = {
     css,
     doc,
     html,
-    htmlPanini,
     images,
     js,
     jsVue,
     modeArg,
     modeEnv,
-    paniniRefresh,
+    panini,
     serve,
 };
