@@ -18,7 +18,6 @@ const modeEnv = require('./helpers/mode-env');
 module.exports = {
     archive,
     assets,
-    browserReload,
     clean,
     config,
     css,
