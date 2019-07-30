@@ -2,7 +2,7 @@ const { src, dest } = require('gulp');
 const eyeglass = require('eyeglass');
 const plugins = require('gulp-load-plugins');
 
-const production = require('./helpers/mode-arg');
+const production = require('./helpers/mode');
 const config = require('./helpers/config');
 
 /* Configuration */

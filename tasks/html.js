@@ -2,7 +2,7 @@ const { src, dest } = require('gulp');
 const plugins = require('gulp-load-plugins');
 
 const config = require('./helpers/config');
-const production = require('./helpers/mode-arg');
+const production = require('./helpers/mode');
 
 /* Plugins */
 // { autoprefixer, cleanCss, htmlmin, if, imagemin, notify, plumber, sass, sassGlob, uglify, zip }

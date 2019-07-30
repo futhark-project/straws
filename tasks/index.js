@@ -9,9 +9,9 @@ const images = require('./images');
 const js = require('./js');
 const jsVue = require('./js-vue');
 const serve = require('./serve');
+/* Helpers */
 const config = require('./helpers/config');
-const modeArg = require('./helpers/mode-arg');
-const modeEnv = require('./helpers/mode-env');
+const mode = require('./helpers/mode');
 
 module.exports = {
     archive,
@@ -24,8 +24,7 @@ module.exports = {
     images,
     js,
     jsVue,
-    modeArg,
-    modeEnv,
+    mode,
     panini,
     serve,
 };

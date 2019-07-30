@@ -1,6 +1,4 @@
-const args = require('yargs').argv;
-
-const production = !!args.production;
+const production = require('./helpers/mode');
 
 const webpackConfig = {
     mode: production ? 'production' : 'development',
