@@ -19,10 +19,10 @@ const {
 
 /* HTML */
 function html() {
-  return src(PATH.src + PANINI.entries)
-        .pipe($.plumber({ errorHandler: $.notify.onError(ERROR) }))
+  return src(PATH.src + PANINI.src)
+    .pipe($.plumber({ errorHandler: $.notify.onError(ERROR) }))
     .pipe(panini(PANINI.paniniOptions))
-        .pipe($.if(production, $.htmlmin({ collapseWhitespace: true })))
+    .pipe($.if(production, $.htmlmin({ collapseWhitespace: true })))
     .pipe(dest(PATH.dest + PANINI.dest));
 }
 

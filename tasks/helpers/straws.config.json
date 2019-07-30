@@ -8,8 +8,8 @@
     "dest": "assets/"
   },
   "CSS": {
-    "src": "assets/sass/**/*.{sass,scss}",
-    "dest": "assets/css"
+    "src": "sass/**/*.{sass,scss}",
+    "dest": "css"
   },
   "DOC": {
     "sassDocOptions": {
@@ -18,7 +18,6 @@
   },
   "ERROR": "Error: <%= error.message %>",
   "HTML": {
-    "entries": "pages/**/*.html",
     "src": "**/*.html",
     "dest": ""
   },
@@ -27,9 +26,9 @@
     "dest": "assets/images"
   },
   "JS": {
-    "entries": "assets/scripts/main.js",
-    "src": "assets/scripts/**/*.js",
-    "dest": "assets/scripts"
+    "entries": "javascript/main.js",
+    "src": "javascript/**/*.js",
+    "dest": "javascript"
   },
   "PANINI": {
     "entries": "pages/**/*.{html,hbs,handlebars}",
