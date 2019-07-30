@@ -4,8 +4,8 @@
     "dest": "./"
   },
   "ASSETS": {
-    "src": "assets/**/*.{json,eot,otf,svg,ttf,woff,woff2}",
-    "dest": "assets/"
+    "src": "**/*.{json,eot,otf,svg,ttf,woff,woff2}",
+    "dest": ""
   },
   "CSS": {
     "src": "sass/**/*.{sass,scss}",
@@ -22,8 +22,8 @@
     "dest": ""
   },
   "IMAGES": {
-    "src": "assets/images/**/*.{gif,jpg,jpeg,png,svg}",
-    "dest": "assets/images"
+    "src": "images/**/*.{gif,jpg,jpeg,png,svg}",
+    "dest": "images"
   },
   "JS": {
     "entries": "javascript/main.js",
