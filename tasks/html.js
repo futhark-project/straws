@@ -18,7 +18,7 @@ const {
 
 /* HTML */
 function html() {
-    return src(PATH.src + HTML.entries)
+    return src(PATH.src + HTML.src)
         .pipe($.plumber({ errorHandler: $.notify.onError(ERROR) }))
         .pipe($.if(production, $.htmlmin({ collapseWhitespace: true })))
         .pipe(dest(PATH.dest + HTML.dest));
