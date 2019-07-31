@@ -19,7 +19,7 @@ const {
 
 /* HTML */
 function html() {
-  return src(PATH.src + PANINI.src)
+  return src(PATH.src + PANINI.entries)
     .pipe($.plumber({ errorHandler: $.notify.onError(ERROR) }))
     .pipe(panini(PANINI.paniniOptions))
     .pipe($.if(production, $.htmlmin({ collapseWhitespace: true })))
