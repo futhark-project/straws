@@ -33,6 +33,7 @@
   "PANINI": {
     "entries": "pages/**/*.{html,hbs,handlebars}",
     "src": "**/*.{html,hbs,handlebars}",
+    "data": "data/**/*.{yml,js,json}",
     "dest": "",
     "paniniOptions": {
       "root": "/src/pages/",
