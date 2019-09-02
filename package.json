@@ -50,5 +50,9 @@
     "webpack-stream": "^5.2.1",
     "yargs": "^14.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "gulp-postcss": "^8.0.0"
+  }
 }
