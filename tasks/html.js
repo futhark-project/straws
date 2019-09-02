@@ -1,12 +1,11 @@
 const { src, dest } = require('gulp');
-const plugins = require('gulp-load-plugins');
+const htmlmin = require('gulp-htmlmin');
+const gulpIf = require('gulp-if');
+const notify = require('gulp-notify');
+const plumber = require('gulp-plumber');
 
 const config = require('./helpers/config');
 const production = require('./helpers/mode');
-
-/* Plugins */
-// { autoprefixer, cleanCss, htmlmin, if, imagemin, notify, plumber, sass, sassGlob, uglify, zip }
-const $ = plugins();
 
 /* Configuration */
 const {
@@ -19,8 +18,8 @@ const {
 /* HTML */
 function html() {
     return src(PATH.src + HTML.src)
-        .pipe($.plumber({ errorHandler: $.notify.onError(ERROR) }))
-        .pipe($.if(production, $.htmlmin({ collapseWhitespace: true })))
+        .pipe(plumber({ errorHandler: notify.onError(ERROR) }))
+        .pipe(gulpIf(production, htmlmin({ collapseWhitespace: true })))
         .pipe(dest(PATH.dest + HTML.dest));
 }
 
