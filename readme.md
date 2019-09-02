@@ -1,12 +1,17 @@
 # Futhark:straws
 
-Straws is a library of gulp's tasks *yet still in development*
+Straws is a library of gulp's tasks.
+[Gulp 4](https://gulpjs.com/) can now be splited into many files. Use this ability an this library to gain modularity in your gulp automations.
 
-## usage
+## Usage
+
+### 1. install the straws
 
 ```shell
 npm install @futhark/straws --save-dev
 ```
+
+### 2. use it in your gulpfile
 
 ```javascript
 // gulpfilejs
@@ -22,7 +27,7 @@ const {
   PATH,
 } = require('./straws.config.json');
 
-const production = require('./tasks/helpers/mode-arg');
+const production = require('./tasks/helpers/mode');
 
 /* Tasks */
 const {
@@ -76,3 +81,68 @@ module.exports = {
   watch: watchTask,
 };
 ```
+
+### 3. configure in the config file
+
+```json
+// ./straws.config.json
+
+// theses are the default values
+{
+  "ARCHIVE": {
+    "src": "dist/**/*",
+    "dest": "./"
+  },
+  "ASSETS": {
+    "src": "**/*.{json,eot,otf,svg,ttf,woff,woff2}",
+    "dest": ""
+  },
+  "CSS": {
+    "src": "sass/**/*.{sass,scss}",
+    "dest": "css"
+  },
+  "DOC": {
+    "sassDocOptions": {
+      "dest": "docs/sass/"
+    }
+  },
+  "ERROR": "Error: <%= error.message %>",
+  "HTML": {
+    "src": "**/*.html",
+    "dest": ""
+  },
+  "IMAGES": {
+    "src": "images/**/*.{gif,jpg,jpeg,png,svg}",
+    "dest": "images"
+  },
+  "JS": {
+    "entries": "javascript/main.js",
+    "src": "javascript/**/*.js",
+    "dest": "javascript"
+  },
+  "PANINI": {
+    "entries": "pages/**/*.{html,hbs,handlebars}",
+    "src": "**/*.{html,hbs,handlebars}",
+    "data": "data/**/*.{yml,js,json}",
+    "dest": "",
+    "paniniOptions": {
+      "root": "/src/pages/",
+      "layouts": "/src/layouts/",
+      "partials": "/src/partials/",
+      "helpers": "/src/helpers/",
+      "data": "/src/data/"
+    }
+  },
+  "PATH": {
+    "src": "src/",
+    "dest": "dist/"
+  },
+  "SERVER": {
+    "port": 8000
+  }
+}
+```
+
+### 4. enjoy a beverage
+
+> Well done, you can enjoy gulp automation and relax ;)
