@@ -1,13 +1,12 @@
 const { src, dest } = require('gulp');
 const panini = require('panini');
-const plugins = require('gulp-load-plugins');
+const htmlmin = require('gulp-htmlmin');
+const gulpIf = require('gulp-if');
+const notify = require('gulp-notify');
+const plumber = require('gulp-plumber');
 
 const config = require('../helpers/config');
 const production = require('../helpers/mode');
-
-/* Plugins */
-// { autoprefixer, cleanCss, htmlmin, if, imagemin, notify, plumber, sass, sassGlob, uglify, zip }
-const $ = plugins();
 
 /* Configuration */
 const {
@@ -20,9 +19,9 @@ const {
 /* HTML */
 function html() {
   return src(PATH.src + PANINI.entries)
-    .pipe($.plumber({ errorHandler: $.notify.onError(ERROR) }))
+    .pipe(plumber({ errorHandler: notify.onError(ERROR) }))
     .pipe(panini(PANINI.paniniOptions))
-    .pipe($.if(production, $.htmlmin({ collapseWhitespace: true })))
+    .pipe(gulpIf(production, htmlmin({ collapseWhitespace: true })))
     .pipe(dest(PATH.dest + PANINI.dest));
 }
 
