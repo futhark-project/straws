@@ -9,8 +9,8 @@ const {
   IMAGES,
   JS,
   PATH,
-} = require('./straws.config.json');
-const production = require('./tasks/helpers/mode-arg');
+} = require('./tasks/helpers/straws.config.json');
+const production = require('./tasks/helpers/mode');
 
 /* Tasks */
 const {
