@@ -1,7 +1,9 @@
+![futhark-staws-logo](./docs/assets/futhark-staws-logo.png)
+
 # Futhark:straws
 
 Straws is a library of gulp's tasks.
-[Gulp 4](https://gulpjs.com/) can now be splited into many files. Use this ability an this library to gain modularity in your gulp automations.
+[Gulp 4](https://gulpjs.com/) can now be splited into many files. We use this ability to build this library to gain modularity in our gulp automations.
 
 ## Usage
 
@@ -146,3 +148,8 @@ module.exports = {
 ### 4. enjoy a beverage
 
 > Well done, you can enjoy gulp automation and relax ;)
+
+
+-----
+
+More examples can be found in [Futhark:builer](https://github.com/futhark-project/builder)
