@@ -23,15 +23,15 @@
   "homepage": "https://github.com/futhark-project/straws#readme",
   "dependencies": {
     "browser-sync": "^2.26.7",
-    "css-loader": "^3.2.1",
-    "eyeglass": "^2.4.1",
+    "css-loader": "^3.5.2",
+    "eyeglass": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
-    "gulp-clean-css": "^4.2.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^6.2.0",
-    "gulp-load-plugins": "^2.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-load-plugins": "^2.0.3",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
@@ -40,20 +40,20 @@
     "gulp-zip": "^5.0.1",
     "lodash": "^4.17.15",
     "panini": "^1.6.3",
-    "rimraf": "^3.0.0",
-    "sass-loader": "^8.0.0",
+    "rimraf": "^3.0.2",
+    "sass-loader": "^8.0.2",
     "sassdoc": "^2.7.1",
     "vinyl-named": "^1.1.0",
-    "vue-loader": "^15.7.2",
+    "vue-loader": "^15.9.1",
     "vue-style-loader": "^4.1.2",
-    "webpack": "^4.41.2",
+    "webpack": "^4.42.1",
     "webpack-stream": "^5.2.1",
-    "yargs": "^15.0.2"
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.3",
+    "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
-    "gulp-dart-sass": "^0.9.1",
+    "gulp-dart-sass": "^1.0.0",
     "gulp-postcss": "^8.0.0"
   }
 }
