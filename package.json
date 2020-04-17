@@ -23,7 +23,7 @@
   "homepage": "https://github.com/futhark-project/straws#readme",
   "dependencies": {
     "browser-sync": "^2.26.7",
-    "css-loader": "^3.2.0",
+    "css-loader": "^3.2.1",
     "eyeglass": "^2.4.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -48,11 +48,12 @@
     "vue-style-loader": "^4.1.2",
     "webpack": "^4.41.2",
     "webpack-stream": "^5.2.1",
-    "yargs": "^14.2.0"
+    "yargs": "^15.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.1",
+    "autoprefixer": "^9.7.3",
     "cssnano": "^4.1.10",
+    "gulp-dart-sass": "^0.9.1",
     "gulp-postcss": "^8.0.0"
   }
 }

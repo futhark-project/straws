@@ -5,7 +5,7 @@ const eyeglass = require('eyeglass');
 const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
 const postCss = require('gulp-postcss');
-const sass = require('gulp-sass');
+const sass = require('gulp-dart-sass');
 const sassGlob = require('gulp-sass-glob');
 
 const production = require('./helpers/mode');
