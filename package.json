@@ -23,7 +23,7 @@
   "homepage": "https://github.com/futhark-project/straws#readme",
   "dependencies": {
     "browser-sync": "^2.26.7",
-    "css-loader": "^3.5.2",
+    "css-loader": "^3.5.3",
     "eyeglass": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -34,7 +34,7 @@
     "gulp-load-plugins": "^2.0.3",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sass-glob": "^1.1.0",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.0.1",
@@ -44,16 +44,16 @@
     "sass-loader": "^8.0.2",
     "sassdoc": "^2.7.1",
     "vinyl-named": "^1.1.0",
-    "vue-loader": "^15.9.1",
+    "vue-loader": "^15.9.2",
     "vue-style-loader": "^4.1.2",
-    "webpack": "^4.42.1",
+    "webpack": "^4.43.0",
     "webpack-stream": "^5.2.1",
     "yargs": "^15.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
-    "gulp-dart-sass": "^1.0.0",
+    "gulp-dart-sass": "^1.0.2",
     "gulp-postcss": "^8.0.0"
   }
 }
