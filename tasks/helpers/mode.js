@@ -1,8 +1,8 @@
-const args = require('yargs').argv;
+import {argv as args } from 'yargs';
 
 const production = process.env.NODE_ENV === 'production' || !!args.production
 
-module.exports = production;
+export default production;
 
 /*
 // You can set production mode with either NODE_ENV or cli flag

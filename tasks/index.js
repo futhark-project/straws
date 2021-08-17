@@ -1,19 +1,19 @@
-const archive = require('./archive');
-const assets = require('./assets');
-const clean = require('./clean');
-const css = require('./css');
-const doc = require('./doc');
-const html = require('./html');
-const panini = require('./panini');
-const images = require('./images');
-const js = require('./js');
-const jsVue = require('./js-vue');
-const serve = require('./serve');
+import archive from './archive';
+import assets from './assets';
+import clean from './clean';
+import css from './css';
+import doc from './doc';
+import html from './html';
+import panini from './panini';
+import images from './images';
+import js from './js';
+import jsVue from './js-vue';
+import serve from './serve';
 /* Helpers */
-const config = require('./helpers/config');
-const mode = require('./helpers/mode');
+import config from './helpers/config';
+import mode from './helpers/mode';
 
-module.exports = {
+export default {
     archive,
     assets,
     clean,

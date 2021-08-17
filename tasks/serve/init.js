@@ -1,5 +1,5 @@
-const browserSync = require('browser-sync');
-const config = require('../helpers/config');
+import browserSync from 'browser-sync';
+import config from '../helpers/config';
 
 /* Configuration */
 const {
@@ -18,4 +18,4 @@ const serve = (done) => {
     done();
 };
 
-module.exports = serve;
+export default serve;

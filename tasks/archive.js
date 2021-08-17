@@ -1,6 +1,6 @@
-const { src, dest } = require('gulp');
-const zip = require('gulp-zip');
-const config = require('./helpers/config');
+import { src, dest } from 'gulp';
+import zip from 'gulp-zip';
+import config from './helpers/config';
 
 const {
   ARCHIVE,
@@ -13,4 +13,4 @@ function archive() {
     .pipe(dest(ARCHIVE.dest));
 }
 
-module.exports = archive;
+export default archive;

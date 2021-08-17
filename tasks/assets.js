@@ -1,5 +1,5 @@
-const { src, dest } = require('gulp');
-const config = require('./helpers/config');
+import { src, dest } from 'gulp';
+import config from './helpers/config';
 
 /* Configuration */
 const {
@@ -13,4 +13,4 @@ function assets() {
         .pipe(dest(PATH.dest + ASSETS.dest)); // JSON (.json) and fonts (*.{eot,otf,svg,ttf,woff,woff2})
 }
 
-module.exports = assets;
+export default assets;

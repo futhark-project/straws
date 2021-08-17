@@ -1,11 +1,11 @@
-const { src, dest } = require('gulp');
-const htmlmin = require('gulp-htmlmin');
-const gulpIf = require('gulp-if');
-const notify = require('gulp-notify');
-const plumber = require('gulp-plumber');
+import { src, dest } from 'gulp';
+import htmlmin from 'gulp-htmlmin';
+import gulpIf from 'gulp-if';
+import notify from 'gulp-notify';
+import plumber from 'gulp-plumber';
 
-const config = require('./helpers/config');
-const production = require('./helpers/mode');
+import config from './helpers/config';
+import production from './helpers/mode';
 
 /* Configuration */
 const {
@@ -23,4 +23,4 @@ function html() {
         .pipe(dest(PATH.dest + HTML.dest));
 }
 
-module.exports = html;
+export default html;

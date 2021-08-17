@@ -1,4 +1,4 @@
-const browserSync = require('browser-sync');
+import browserSync from 'browser-sync';
 
 // Browser Reload
 function browserReload(done) {
@@ -6,4 +6,4 @@ function browserReload(done) {
     done();
 }
 
-module.exports = browserReload;
+export default browserReload;

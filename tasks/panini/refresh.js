@@ -1,8 +1,8 @@
-const panini = require('panini');
+import panini from 'panini';
 
 function paniniRefresh(done) {
     panini.refresh();
     done();
 }
 
-module.exports = paniniRefresh;
+export default paniniRefresh;

@@ -1,7 +1,7 @@
-const init = require('./init')
-const reload = require('./reload')
+import init from './init'
+import reload from './reload'
 
-module.exports = {
+export default {
   init,
   reload
 }

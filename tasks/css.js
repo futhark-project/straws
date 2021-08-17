@@ -1,15 +1,15 @@
-const { src, dest } = require('gulp');
-const eyeglass = require('eyeglass');
-const autoprefixer = require('gulp-autoprefixer');
-const cleanCss = require('gulp-clean-css');
-const gulpIf = require('gulp-if');
-const notify = require('gulp-notify');
-const plumber = require('gulp-plumber');
-const sass = require('gulp-sass');
-const sassGlob = require('gulp-sass-glob');
+import { src, dest } from 'gulp';
+import eyeglass from 'eyeglass';
+import autoprefixer from 'gulp-autoprefixer';
+import cleanCss from 'gulp-clean-css';
+import gulpIf from 'gulp-if';
+import notify from 'gulp-notify';
+import plumber from 'gulp-plumber';
+import sass from 'gulp-sass';
+import sassGlob from 'gulp-sass-glob';
 
-const production = require('./helpers/mode');
-const config = require('./helpers/config');
+import production from './helpers/mode';
+import config from './helpers/config';
 
 /* Configuration */
 const {
@@ -40,4 +40,4 @@ function css() {
     .pipe(dest(PATH.dest + CSS.dest, { sourcemaps: '.' }));
 }
 
-module.exports = css;
+export default css;

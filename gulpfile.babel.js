@@ -1,19 +1,19 @@
 /* Imports */
-const { series, parallel, watch } = require('gulp');
+import { series, parallel, watch } from 'gulp';
 
 /* Configuration */
-const {
+import {
   ASSETS,
   CSS,
   HTML,
   IMAGES,
   JS,
   PATH,
-} = require('./tasks/helpers/straws.config.json');
-const production = require('./tasks/helpers/mode');
+} from './tasks/helpers/straws.config.json';
+import production from './tasks/helpers/mode';
 
 /* Tasks */
-const {
+import {
   archive,
   assets,
   browserReload,
@@ -25,7 +25,7 @@ const {
   js,
   paniniRefresh,
   serve,
-} = require('./tasks');
+} from './tasks';
 
 
 /* Archive */
@@ -57,7 +57,7 @@ const watchTask = series(buildTask, serve, () => {
 });
 
 /* Exports */
-module.exports = {
+export default {
   default: production ? series(buildTask) : series(watchTask),
   archive: archiveTask,
   build: buildTask,

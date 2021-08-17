@@ -1,7 +1,7 @@
-const { src, dest, lastRun } = require('gulp');
-const imagemin = require('gulp-imagemin');
+import { src, dest, lastRun } from 'gulp';
+import imagemin from 'gulp-imagemin';
 
-const config = require('./helpers/config');
+import config from './helpers/config';
 
 /* Configuration */
 const {
@@ -16,4 +16,4 @@ function images() {
         .pipe(dest(PATH.dest + IMAGES.dest));
 }
 
-module.exports = images;
+export default images;

@@ -1,5 +1,5 @@
-const rm = require('rimraf');
-const config = require('./helpers/config');
+import rm from 'rimraf';
+import config from './helpers/config';
 
 /* Configuration */
 const {
@@ -11,4 +11,4 @@ function clean(done) {
     rm(PATH.dest, done);
 }
 
-module.exports = clean;
+export default clean;

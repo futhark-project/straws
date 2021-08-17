@@ -1,15 +1,15 @@
-const { src, dest } = require('gulp');
-const gulpIf = require('gulp-if');
-const notify = require('gulp-notify');
-const plumber = require('gulp-plumber');
-const uglify = require('gulp-uglify');
-const named = require('vinyl-named');
-const webpack = require('webpack');
-const webpackStream = require('webpack-stream');
+import { src, dest } from 'gulp';
+import gulpIf from 'gulp-if';
+import notify from 'gulp-notify';
+import plumber from 'gulp-plumber';
+import uglify from 'gulp-uglify';
+import named from 'vinyl-named';
+import webpack from 'webpack';
+import webpackStream from 'webpack-stream';
 
-const production = require('./helpers/mode');
-const config = require('./helpers/config');
-const webpackConfig = require('./webpack.vue.config');
+import production from './helpers/mode';
+import config from './helpers/config';
+import webpackConfig from './webpack.vue.config';
 
 
 /* Configuration */
@@ -28,4 +28,4 @@ function js() {
         .pipe(dest(PATH.dest + JS.dest, { sourcemaps: '.' }));
 }
 
-module.exports = js;
+export default js;

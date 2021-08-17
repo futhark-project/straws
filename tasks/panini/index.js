@@ -1,7 +1,7 @@
-const html = require('./html')
-const refresh = require('./refresh')
+import html from './html';
+import refresh from './refresh';
 
-module.exports = {
+export default {
   html,
   refresh
-}
+};

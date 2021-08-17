@@ -1,5 +1,5 @@
-const path = require('path')
-const { merge } = require('lodash')
+import path from 'node:path';
+import { merge } from 'lodash'
 
 const CONFIG_FILE_NAME = 'straws.config.json'
 
@@ -19,4 +19,4 @@ try {
   config = defaultConfig
 }
 
-module.exports = config;
+export default config;

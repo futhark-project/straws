@@ -1,5 +1,5 @@
-const { VueLoaderPlugin } = require('vue-loader');
-const production = require('./helpers/mode');
+import { VueLoaderPlugin } from 'vue-loader';
+import production from './helpers/mode';
 
 
 /* JS */
@@ -53,4 +53,4 @@ const webpackConfig = {
     devtool: !production && 'source-map',
 };
 
-module.exports = webpackConfig;
+export default webpackConfig;

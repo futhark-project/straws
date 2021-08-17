@@ -1,6 +1,6 @@
-const { src } = require('gulp');
-const sassdoc = require('sassdoc');
-const config = require('./helpers/config');
+import { src } from 'gulp';
+import sassdoc from 'sassdoc';
+import config from './helpers/config';
 
 /* Configuration */
 const {
@@ -15,4 +15,4 @@ function doc() {
         .pipe(sassdoc(DOC.sassDocOptions));
 }
 
-module.exports = doc;
+export default doc;

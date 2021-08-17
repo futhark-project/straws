@@ -1,15 +1,15 @@
-const { src, dest } = require('gulp');
-const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
-const eyeglass = require('eyeglass');
-const notify = require('gulp-notify');
-const plumber = require('gulp-plumber');
-const postCss = require('gulp-postcss');
-const sass = require('gulp-dart-sass');
-const sassGlob = require('gulp-sass-glob');
+import { src, dest } from 'gulp';
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
+import eyeglass from 'eyeglass';
+import notify from 'gulp-notify';
+import plumber from 'gulp-plumber';
+import postCss from 'gulp-postcss';
+import sass from 'gulp-dart-sass';
+import sassGlob from 'gulp-sass-glob';
 
-const production = require('./helpers/mode');
-const config = require('./helpers/config');
+import production from './helpers/mode';
+import config from './helpers/config';
 
 /* Configuration */
 const {
@@ -33,4 +33,4 @@ function css() {
     .pipe(dest(PATH.dest + CSS.dest, { sourcemaps: '.' }));
 }
 
-module.exports = css;
+export default css;

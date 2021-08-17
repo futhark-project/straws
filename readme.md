@@ -17,22 +17,22 @@ npm install @futhark/straws --save-dev
 
 ```javascript
 // gulpfilejs
-const { series, parallel, watch } = require('gulp');
+import { series, parallel, watch } from 'gulp';
 
 /* Configuration */
-const {
+import {
   ASSETS,
   CSS,
   HTML,
   IMAGES,
   JS,
   PATH,
-} = require('./straws.config.json');
+} from './straws.config.json';
 
-const production = require('./tasks/helpers/mode');
+import production from './tasks/helpers/mode';
 
 /* Tasks */
-const {
+import {
   archive,
   assets,
   browserReload,
@@ -44,7 +44,7 @@ const {
   js,
   paniniRefresh,
   serve,
-} = require('./@futhark/straws');
+} from './@futhark/straws';
 
 /* Archive */
 const archiveTask = series(archive);
@@ -75,7 +75,7 @@ const watchTask = series(buildTask, serve, () => {
 });
 
 /* Exports */
-module.exports = {
+export default {
   default: production ? series(buildTask) : series(watchTask),
   archive: archiveTask,
   build: buildTask,
